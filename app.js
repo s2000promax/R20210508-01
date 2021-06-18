@@ -1,7 +1,7 @@
 //******************** */
 //***Step-By-Step***** */
 //******SERVER******** */
-//1. Open New Folder: For example: "mern-course"
+//1. Open New Folder: For example: "shooter-club-01"
 //2. npm init -y  
 //3. Root: Create new file: app.js
 //4. npm install express mongoose
