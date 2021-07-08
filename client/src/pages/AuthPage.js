@@ -47,15 +47,23 @@ const loginHandler = async () => {
   }catch(e) {}
 }
 
+const pressHandler = async event => {
+  if (event.key === 'Enter') {
+    try {
+      loginHandler()
+    } catch (e) {}
+  }
+}
+
 
     return(
         <div className="row">
             <div className="col s6 offset-s3">
-                <h1>Shorts link</h1>
+                <h4>Shooter-club: OnLine portal</h4>
 
                 <div className="card blue darken-1">
         <div className="card-content white-text">
-          <span className="card-title">Authenticate</span>
+          <span className="card-title">Authorization</span>
 
           <div>
 
@@ -68,6 +76,7 @@ const loginHandler = async () => {
                     className="yellow-input"
                     value={form.email}
                     onChange = {changeHandler}
+                    onKeyPress={pressHandler}
               />
           <label htmlFor="email">Email</label>
         </div>
@@ -81,6 +90,7 @@ const loginHandler = async () => {
                     className="yellow-input"
                     value={form.password}
                     onChange = {changeHandler}
+                    onKeyPress={pressHandler}
               />
           <label htmlFor="password">Password</label>
         </div>
@@ -93,6 +103,7 @@ const loginHandler = async () => {
                  style={{marginRight: 10}}
                  disabled={loading}
                  onClick={loginHandler}
+                 onKeyPress={pressHandler}
                  >
                    SingIn
           </button>
