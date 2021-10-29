@@ -4,7 +4,7 @@ import { LinksPage } from './pages/LinksPage'
 import { CreatePage } from './pages/CreatePage'
 import { DetailPage } from './pages/DetailPage'
 import { AuthPage } from './pages/AuthPage'
-import { DigitalTablet } from './pages/DigitalTablet'
+import  DigitalTablet  from './pages/DigitalTablet'
 import { ScorePage } from './pages/ScorePage'
 
 export const useRoutes = isAuthenticated => {
